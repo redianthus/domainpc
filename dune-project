@@ -4,14 +4,14 @@
 
 (generate_opam_files true)
 
+(license AGPL-3.0-or-later)
+
 (source
  (github hra687261/domainpc))
 
 (authors "<hra@ocamlpro.com>")
 
 (maintainers "<hra@ocamlpro.com>")
-
-(license LICENSE)
 
 (package
  (name domainpc)

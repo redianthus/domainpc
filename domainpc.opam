@@ -6,7 +6,7 @@ description:
   "Domain Per Core, ensure that each domain runs on its own physical core."
 maintainer: ["<hra@ocamlpro.com>"]
 authors: ["<hra@ocamlpro.com>"]
-license: "LICENSE"
+license: "AGPL-3.0-or-later"
 tags: ["add topics" "to describe" "your" "project"]
 homepage: "https://github.com/hra687261/domainpc"
 bug-reports: "https://github.com/hra687261/domainpc/issues"
