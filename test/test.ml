@@ -14,4 +14,4 @@ let () =
   let d3 = Domainpc.spawn (fun _ -> stress ()) in
   let d4 = Domainpc.spawn (fun _ -> stress ()) in
   stress ();
-  List.iter Domainpc.join [ d1; d2; d3; d4 ]
+  List.iter Domain.join [ d1; d2; d3; d4 ]
