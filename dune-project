@@ -17,6 +17,6 @@
  (name domainpc)
  (synopsis "Domainpc")
  (description "Domain Per Core, spawn domains ensuring that they run on separate cores.")
- (depends ocaml processor))
+ (depends (ocaml (>= 5.2)) processor))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
