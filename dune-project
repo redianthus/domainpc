@@ -15,7 +15,7 @@
 
 (package
  (name domainpc)
- (synopsis "Domainpc")
+ (synopsis "Domain Per Core, spawn domains ensuring that they run on separate cores.")
  (description "Domain Per Core, spawn domains ensuring that they run on separate cores.")
  (depends (ocaml (>= 5.2)) processor))
 
