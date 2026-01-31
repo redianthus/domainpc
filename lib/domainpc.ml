@@ -11,10 +11,11 @@ let wait_on_unavailable () = Atomic.set crash false
     core. *)
 let cpus_per_core = Queue.create ()
 
-let get_available_cores () = Queue.length cpus_per_core
-
 (** Whether or not the queue of cpus_per_core was initialized. *)
 let initialized = ref false
+
+let get_available_cores () =
+  if !initialized then Queue.length cpus_per_core else Processor.Query.cpu_count
 
 (** The mode in which the library is used. It is dermined from the first call to
     `spawn` or `spawn_n` *)
